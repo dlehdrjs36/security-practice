@@ -16,9 +16,15 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation "org.springframework.boot:spring-boot-starter-web"
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	//thymeleaf
+	implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+	implementation "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect"
+	//jpa
+	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+	testImplementation "org.springframework.boot:spring-boot-starter-test"
+	runtimeOnly "com.mysql:mysql-connector-j"
 }
 
 tasks.named('test') {
